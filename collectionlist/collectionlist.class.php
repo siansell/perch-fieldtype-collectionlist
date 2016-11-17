@@ -20,8 +20,6 @@ class PerchFieldType_collectionlist extends PerchAPI_FieldType
         $id  = $this->Tag->input_id();
         $val = '';
 
-        PerchUtil::debug($details);
-
         if (isset($details[$id]) && $details[$id]!='') {
             $val = $details[$id];
         }
