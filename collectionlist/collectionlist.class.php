@@ -27,7 +27,7 @@ class PerchFieldType_collectionlist extends PerchAPI_FieldType
         }
 
         if (!class_exists('PerchContent_Collections')) {
-            include_once(PERCH_CORE.'/apps/content/PerchContent_Collections.class.php');
+            include_once(PERCH_CORE.'/runway/apps/content/PerchContent_Collections.class.php');
         }
 
         $Collections = new PerchContent_Collections();
