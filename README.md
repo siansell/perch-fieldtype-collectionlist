@@ -1,6 +1,6 @@
 # Perch CollectionList fieldtype
 
- A fieldtype for Perch CMS selecting an item from a collection. Perch Runway only.
+A fieldtype for Perch Runway CMS to select an item from a collection. Perch Runway only. Similar to [Dataselect](https://docs.grabaperch.com/templates/field-types/dataselect/), but for Perch Runway Collections rather than Perch regions.
 
 ## Installation
 
