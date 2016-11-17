@@ -1,6 +1,6 @@
 # Perch CollectionList fieldtype
 
- A field type for selecting an item from a collection.
+ A fieldtype for Perch CMS selecting an item from a collection. Perch Runway only.
 
 ## Installation
 
