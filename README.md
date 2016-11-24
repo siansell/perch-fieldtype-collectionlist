@@ -2,6 +2,8 @@
 
 A fieldtype for Perch Runway CMS to select an item from a collection. Perch Runway only. Similar to [Dataselect](https://docs.grabaperch.com/templates/field-types/dataselect/), but for Perch Runway Collections rather than Perch regions.
 
+You probably want to use [`<perch:related />`](https://docs.grabaperch.com/runway/relationships/) instead, but this can be used in a few situations. For example, if you want to limit the user to a single selection, or for use inside a [`<perch:repeater />`](https://docs.grabaperch.com/templates/repeaters/) tag (where the `<perch:related />` tag doesn't seem to work).
+
 ## Installation
 
 Copy the `collectionlist` folder to `perch/addons/fieldtypes`.
