@@ -38,8 +38,14 @@ class PerchFieldType_collectionlist extends PerchAPI_FieldType
             $CollectionItems = $Collection->get_items();
             if (PerchUtil::count($CollectionItems)) {
                 foreach($CollectionItems as $Item) {
+                    $label = '';
+                    $options = explode(' ', $this->Tag->options());
+                    foreach ($options as $o) {
+                        $label .= $Item->get_field($o). ' - ';
+                    }
+                    $label = substr($label, 0, -3);
                     $values = $this->Tag->values() ? $Item->get_field($this->Tag->values()) : $Item->itemID();
-                    $opts[] = array('label'=>$Item->get_field($this->Tag->options()), 'value'=>$values);
+                    $opts[] = array('label'=>$label, 'value'=>$values);
                 }
             }
         }
