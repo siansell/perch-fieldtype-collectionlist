@@ -12,9 +12,10 @@ General documentation on Perch fieldtypes can be found on the [Perch support sit
 
 ## Attributes
 - collection: Required. The name of the collection.
-- options: Required. The ID of a field in the collection to populate the select box with.
+- options: Required. Space delimited list of field IDs in the collection to populate the select box with.
 - values: Optional. The ID of another field in the collection to take the values from. If omitted, the internal itemID is used.
 
 ## Examples
 `<perch:content id="book" type="collectionlist" collection="Books" label="Book" options="title" />`
+`<perch:content id="book" type="collectionlist" collection="Books" label="Book" options="title author" />`
 `<perch:content id="book" type="collectionlist" collection="Books" label="Book" options="title" values="isbn" />`
